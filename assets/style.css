@@ -340,3 +340,33 @@ strong {
   margin-block: 35px;
   border-color: var(--gray);
 }
+
+/* [2] Blog section */
+.blog {
+  gap: 34px 10px;
+  padding-bottom: 80px;
+  grid-template-columns: repeat(auto-fit, minmax(0, 328px));
+}
+@media (min-width: 992px) {
+  .blog {
+    padding-bottom: 130px;
+  }
+}
+.blog__article__wrapper {
+  column-gap: 24px;
+}
+.blog__article__num {
+  font-size: 1.7rem;
+  margin-bottom: 8px;
+}
+.blog__article__content:hover {
+  color: var(--red);
+}
+.blog__article__title {
+  margin-bottom: 8px;
+  will-change: color;
+  transition: color 0.3s;
+}
+.blog__article__txt {
+  line-height: 1.7;
+}
