@@ -74,12 +74,6 @@ button {
 .grid {
   display: grid;
 }
-.align-center {
-  align-items: center;
-}
-.justify-center {
-  justify-content: center;
-}
 .justify-between {
   justify-content: space-between;
 }
@@ -90,14 +84,6 @@ button {
 }
 .h-full {
   height: 100%;
-}
-
-/* Position */
-.absolute {
-  position: absolute;
-}
-.relative {
-  position: relative;
 }
 
 /* Color */
@@ -122,9 +108,6 @@ button {
 }
 
 /* Font */
-.font-base {
-  font-weight: 400;
-}
 .font-bold {
   font-weight: 700;
 }
@@ -152,12 +135,6 @@ body {
   min-height: 100vh;
   background-color: var(--white);
   font: 400 15px/1 var(--base-font);
-}
-h1,
-h2,
-h3,
-strong {
-  font-weight: 800;
 }
 
 /*
