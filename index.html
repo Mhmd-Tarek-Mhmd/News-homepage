@@ -9,6 +9,53 @@
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
   <body>
-    <div class="page-wrapper"></div>
+    <div class="page-wrapper">
+      <!-- Nav layout -->
+      <nav class="nav | flex-between">
+        <a aria-label="To home page" href="/" class="nav__logo | block">
+          <img
+            aria-hidden="true"
+            src="./assets/images/logo.svg"
+            alt=""
+            class="w-full h-full"
+          />
+        </a>
+
+        <button
+          aria-label="Open menu"
+          class="nav__toggler"
+          aria-controls="menu"
+          onclick="navToggle(event)"
+        >
+          <img aria-hidden="true" src="./assets/images/icon-menu.svg" alt="" />
+        </button>
+
+        <ul class="nav__links | flex align-center" id="menu">
+          <li><a href="/" class="nav__link">Home</a></li>
+          <li><a href="/" class="nav__link">New</a></li>
+          <li><a href="/" class="nav__link">Popular</a></li>
+          <li><a href="/" class="nav__link">Trending</a></li>
+          <li><a href="/" class="nav__link">Categories</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <script>
+      function navToggle(e) {
+        const showClassName = "show";
+        const toggler = e.currentTarget;
+        const menu = toggler.nextElementSibling;
+        const togglerIcon = toggler.firstElementChild;
+
+        menu.classList.toggle(showClassName);
+        if (menu.classList.contains(showClassName)) {
+          toggler.ariaLabel = "Close menu";
+          togglerIcon.src = "./assets/images/icon-menu-close.svg";
+        } else {
+          toggler.ariaLabel = "Open menu";
+          togglerIcon.src = "./assets/images/icon-menu.svg";
+        }
+      }
+    </script>
   </body>
 </html>
