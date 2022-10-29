@@ -116,6 +116,10 @@ button {
 .light-gray-cl {
   color: var(--light-gray);
 }
+.will-change-color {
+  will-change: color;
+  transition: color 0.3s;
+}
 
 /* Font */
 .font-base {
@@ -187,10 +191,6 @@ strong {
 .nav__logo {
   width: 46px;
   height: 29px;
-}
-.nav__link {
-  will-change: color;
-  transition: color 0.3s;
 }
 .nav__link:hover {
   color: var(--red);
@@ -330,8 +330,6 @@ strong {
 .intro__aside__slot__title {
   font-size: 1.25rem;
   margin-bottom: 10px;
-  will-change: color;
-  transition: color 0.3s;
 }
 .intro__aside__slot__txt {
   line-height: 1.85;
@@ -364,8 +362,6 @@ strong {
 }
 .blog__article__title {
   margin-bottom: 8px;
-  will-change: color;
-  transition: color 0.3s;
 }
 .blog__article__txt {
   line-height: 1.7;
